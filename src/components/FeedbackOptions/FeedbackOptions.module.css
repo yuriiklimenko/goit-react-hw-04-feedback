@@ -1,0 +1,19 @@
+.btn {
+  padding: 5px 10px;
+  background-color: transparent;
+  text-transform: capitalize;
+  border-color: gray;
+}
+
+.btn:not(:last-child) {
+  margin-right: 7px;
+}
+
+.btn:hover {
+  background-color: skyblue;
+  color: white;
+}
+
+.btn:active {
+  background-color: blue;
+}
