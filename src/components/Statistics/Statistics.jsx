@@ -1,6 +1,12 @@
 import PropTypes from 'prop-types';
 
-const Statistics = ({ good, neutral, bad, total, positiveFeedback }) => {
+const Statistics = ({
+  good = 0,
+  neutral = 0,
+  bad = 0,
+  total,
+  positiveFeedback,
+}) => {
   return (
     <div>
       <p>Good: {good}</p>
