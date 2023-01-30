@@ -11,16 +11,16 @@ function ClassStatistics() {
     bad: 0,
   });
 
-  // const onButtonClick = option => {
-  //   setFeedback(prevFeedback => ({
-  //     ...prevFeedback,
-  //     [option]: feedback[option] + 1,
-  //   }));
-  // };
-
   const onButtonClick = option => {
-    setFeedback({ ...feedback, [option]: feedback[option] + 1 });
+    setFeedback(prevState => ({
+      ...prevState,
+      [option]: prevState[option] + 1,
+    }));
   };
+
+  // const onButtonClick = option => {
+  //   setFeedback({ ...feedback, [option]: feedback[option] + 1 });
+  // };
 
   const countTotalFeedback = () => {
     return feedback.good + feedback.neutral + feedback.bad;
