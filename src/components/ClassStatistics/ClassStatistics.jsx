@@ -11,8 +11,15 @@ function ClassStatistics() {
     bad: 0,
   });
 
-  const onButtonClick = e => {
-    setFeedback({ ...feedback, [e.target.name]: feedback[e.target.name] + 1 });
+  // const onButtonClick = option => {
+  //   setFeedback(prevFeedback => ({
+  //     ...prevFeedback,
+  //     [option]: feedback[option] + 1,
+  //   }));
+  // };
+
+  const onButtonClick = option => {
+    setFeedback({ ...feedback, [option]: feedback[option] + 1 });
   };
 
   const countTotalFeedback = () => {
