@@ -18,10 +18,6 @@ function ClassStatistics() {
     }));
   };
 
-  // const onButtonClick = option => {
-  //   setFeedback({ ...feedback, [option]: feedback[option] + 1 });
-  // };
-
   const countTotalFeedback = () => {
     return feedback.good + feedback.neutral + feedback.bad;
   };
